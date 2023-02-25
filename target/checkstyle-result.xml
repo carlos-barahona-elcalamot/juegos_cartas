@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.45.1">
+<file name="/home/carlos/calamot/DAM1 M3 Programació/java/las_7_y_media/sieteymedia/src/main/java/com/ieselcalamot/baraja_espanyola/Carta.java">
+<error line="1" column="9" severity="error" message="El nombre &apos;com.ieselcalamot.baraja_espanyola&apos; debe coincidir con el patrón &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="3" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="5" column="11" severity="error" message="Modificador &apos;private&apos; desordenado según las sugerencias de la JLS." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+<error line="6" column="11" severity="error" message="Modificador &apos;private&apos; desordenado según las sugerencias de la JLS." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+<error line="7" column="11" severity="error" message="Modificador &apos;private&apos; desordenado según las sugerencias de la JLS." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+<error line="9" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="10" column="34" severity="error" message="&apos;12&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="28" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="35" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="43" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="49" column="18" severity="error" message="&apos;10&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="52" column="18" severity="error" message="&apos;11&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="55" column="18" severity="error" message="&apos;12&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="/home/carlos/calamot/DAM1 M3 Programació/java/las_7_y_media/sieteymedia/src/main/java/com/ieselcalamot/baraja_espanyola/BarajaEspanyola.java">
+<error line="1" column="9" severity="error" message="El nombre &apos;com.ieselcalamot.baraja_espanyola&apos; debe coincidir con el patrón &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="5" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="7" column="11" severity="error" message="Modificador &apos;private&apos; desordenado según las sugerencias de la JLS." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+<error line="7" column="36" severity="error" message="&apos;{&apos; está seguido de espacios en blanco." source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceAfterCheck"/>
+<error line="9" column="11" severity="error" message="Modificador &apos;private&apos; desordenado según las sugerencias de la JLS." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+<error line="10" column="11" severity="error" message="Modificador &apos;private&apos; desordenado según las sugerencias de la JLS." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+<error line="11" column="11" severity="error" message="Modificador &apos;private&apos; desordenado según las sugerencias de la JLS." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+<error line="14" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="20" column="28" severity="error" message="&apos;40&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="20" column="64" severity="error" message="&apos;8&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="25" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="34" column="41" severity="error" message="&apos;13&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="35" column="33" severity="error" message="&apos;8&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="35" column="47" severity="error" message="&apos;9&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="44" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/home/carlos/calamot/DAM1 M3 Programació/java/las_7_y_media/sieteymedia/src/main/java/com/ieselcalamot/juegos/SieteYMedia.java">
+<error line="3" column="41" severity="error" message="Usar la importación con &apos;.*&apos; debería evitarse - com.ieselcalamot.baraja_espanyola.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="6" column="1" severity="error" message="Orden incorrecto para el import &apos;java.io.IOException&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="1" severity="error" message="&apos;CLASS_DEF&apos; cuenta con más de 1 líneas vacías antes." source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="9" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="11" column="19" severity="error" message="La variable &apos;puntosJugador&apos; se inicializa explicitamente a &apos;0&apos; (valor por defecto para su tipo)." source="com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"/>
+<error line="12" column="19" severity="error" message="La variable &apos;puntosBanca&apos; se inicializa explicitamente a &apos;0&apos; (valor por defecto para su tipo)." source="com.puppycrawl.tools.checkstyle.checks.coding.ExplicitInitializationCheck"/>
+<error line="16" column="36" severity="error" message="&apos;7&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="16" column="40" severity="error" message="&apos;0.5f&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="31" column="33" severity="error" message="&apos;7.5f&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="36" column="34" severity="error" message="&apos;7.5f&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="36" column="72" severity="error" message="Expresiones literales de cadena deben estar en el lado izquierdo de una comparación equalsIgnoreCase." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+<error line="48" column="32" severity="error" message="&apos;7.5f&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="51" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="58" column="30" severity="error" message="&apos;7.5f&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="63" column="61" severity="error" message="&apos;7.5f&apos; es un número mágico." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+<file name="/home/carlos/calamot/DAM1 M3 Programació/java/las_7_y_media/sieteymedia/src/main/java/com/ieselcalamot/JuegosCartas/JuegosCartasApp.java">
+<error line="1" column="9" severity="error" message="El nombre &apos;com.ieselcalamot.JuegosCartas&apos; debe coincidir con el patrón &apos;^[a-z]+(\.[a-z][a-z0-9]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="6" column="1" severity="error" message="Orden incorrecto para el import &apos;java.io.IOException&apos;." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="1" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="12" column="5" severity="error" message="Falta el comentario Javadoc." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="39" column="42" severity="error" message="Expresiones literales de cadena deben estar en el lado izquierdo de una comparación equalsIgnoreCase." source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsAvoidNullCheck"/>
+</file>
+</checkstyle>

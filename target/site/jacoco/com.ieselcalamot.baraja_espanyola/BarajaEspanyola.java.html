@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BarajaEspanyola.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">sieteymedia</a> &gt; <a href="index.source.html" class="el_package">com.ieselcalamot.baraja_espanyola</a> &gt; <span class="el_source">BarajaEspanyola.java</span></div><h1>BarajaEspanyola.java</h1><pre class="source lang-java linenums">package com.ieselcalamot.baraja_espanyola;
+
+import java.util.ArrayList;
+
+public class BarajaEspanyola {
+
+<span class="nc" id="L7">    final private String[] palos = { &quot;OROS&quot;, &quot;COPAS&quot;, &quot;ESPADAS&quot;, &quot;BASTOS&quot; };</span>
+
+    final private int numeroComodines;
+    final private boolean usar8sY9s;
+    final private Carta[] baraja;
+    private ArrayList&lt;Carta&gt; monton;
+
+<span class="nc" id="L14">    public BarajaEspanyola(boolean usar8sY9s, int numeroComodines) throws InstantiationError {</span>
+<span class="nc bnc" id="L15" title="All 4 branches missed.">        if (numeroComodines &lt; 0 || numeroComodines &gt; 2) {</span>
+<span class="nc" id="L16">            throw new InstantiationError(&quot;El número de comodines deber 0, 1, o 2&quot;);</span>
+        }
+<span class="nc" id="L18">        this.numeroComodines = numeroComodines;</span>
+<span class="nc" id="L19">        this.usar8sY9s = usar8sY9s;</span>
+<span class="nc bnc" id="L20" title="All 2 branches missed.">        baraja = new Carta[40 + numeroComodines + (usar8sY9s ? 8 : 0)];</span>
+<span class="nc" id="L21">        monton = new ArrayList&lt;&gt;(baraja.length);</span>
+<span class="nc" id="L22">        crearBaraja();</span>
+<span class="nc" id="L23">    }</span>
+
+    void crearBaraja() {
+<span class="nc" id="L26">        int iCarta = 0;</span>
+<span class="nc" id="L27">        monton.clear();</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">        for (int i = 0; i &lt; numeroComodines; i++) {</span>
+<span class="nc" id="L29">            Carta carta = Carta.crearComodin();</span>
+<span class="nc" id="L30">            baraja[iCarta++] = carta;</span>
+<span class="nc" id="L31">            monton.add(carta);</span>
+        }
+<span class="nc bnc" id="L33" title="All 2 branches missed.">        for (String palo : palos) {</span>
+<span class="nc bnc" id="L34" title="All 2 branches missed.">            for (int valor = 1; valor &lt; 13; valor++) {</span>
+<span class="nc bnc" id="L35" title="All 6 branches missed.">                if (!((valor == 8 || valor == 9) &amp;&amp; !usar8sY9s)) {</span>
+<span class="nc" id="L36">                    Carta carta = new Carta(palo, valor);</span>
+<span class="nc" id="L37">                    baraja[iCarta++] = carta;</span>
+<span class="nc" id="L38">                    monton.add(carta);</span>
+                }
+            }
+        }
+<span class="nc" id="L42">    }</span>
+
+    public void barajar() {
+<span class="nc" id="L45">        ArrayList&lt;Carta&gt; montonBarajado = new ArrayList&lt;Carta&gt;(baraja.length);</span>
+<span class="nc bnc" id="L46" title="All 2 branches missed.">        for (int i = 0; i &lt; baraja.length; i++) {</span>
+<span class="nc" id="L47">            int pos = (int) (Math.random() * monton.size());</span>
+<span class="nc" id="L48">            montonBarajado.add(monton.remove(pos));</span>
+        }
+<span class="nc" id="L50">        monton.clear();</span>
+
+<span class="nc" id="L52">    }</span>
+
+    public Carta getSiguienteCarta() {
+<span class="nc bnc" id="L55" title="All 2 branches missed.">        return monton.size() &gt; 0 ? monton.remove(monton.size() - 1) : null;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

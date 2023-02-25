@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Carta.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">sieteymedia</a> &gt; <a href="index.source.html" class="el_package">com.ieselcalamot.baraja_espanyola</a> &gt; <span class="el_source">Carta.java</span></div><h1>Carta.java</h1><pre class="source lang-java linenums">package com.ieselcalamot.baraja_espanyola;
+
+public class Carta {
+
+    final private String palo;
+    final private int numero;
+    final private boolean esComodin;
+
+<span class="nc" id="L9">    public Carta(String palo, int valor) throws InstantiationError {</span>
+<span class="nc bnc" id="L10" title="All 4 branches missed.">        if (valor &lt; 1 || valor &gt; 12) {</span>
+<span class="nc" id="L11">            throw new InstantiationError(&quot;El valor de una carta debe estar entre 1 y 12&quot;);</span>
+        }
+<span class="nc" id="L13">        this.palo = palo;</span>
+<span class="nc" id="L14">        this.numero = valor;</span>
+<span class="nc" id="L15">        this.esComodin = false;</span>
+<span class="nc" id="L16">    }</span>
+
+<span class="nc" id="L18">    private Carta() {</span>
+<span class="nc" id="L19">        esComodin = true;</span>
+<span class="nc" id="L20">        palo = null;</span>
+<span class="nc" id="L21">        numero = -1;</span>
+<span class="nc" id="L22">    }</span>
+
+    public static Carta crearComodin() {
+<span class="nc" id="L25">        return new Carta();</span>
+    }
+
+    public String getPalo() {
+<span class="nc bnc" id="L29" title="All 2 branches missed.">        if (esComodin) {</span>
+<span class="nc" id="L30">            throw new IllegalStateException(&quot;La carta comodin no tiene palo&quot;);</span>
+        }
+<span class="nc" id="L32">        return palo;</span>
+    }
+
+    public int getNumero() {
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        if (esComodin) {</span>
+<span class="nc" id="L37">            throw new IllegalStateException(&quot;La carta comodin no tiene valor&quot;);</span>
+        }
+<span class="nc" id="L39">        return numero;</span>
+
+    }
+
+    public String getNombre() {
+<span class="nc" id="L44">        String nombre = &quot;&quot;;</span>
+<span class="nc bnc" id="L45" title="All 5 branches missed.">        switch (numero) {</span>
+            case 1:
+<span class="nc" id="L47">                nombre = &quot;As&quot;;</span>
+<span class="nc" id="L48">                break;</span>
+            case 10:
+<span class="nc" id="L50">                nombre = &quot;Sota&quot;;</span>
+<span class="nc" id="L51">                break;</span>
+            case 11:
+<span class="nc" id="L53">                nombre = &quot;Caballo&quot;;</span>
+<span class="nc" id="L54">                break;</span>
+            case 12:
+<span class="nc" id="L56">                nombre = &quot;Rey&quot;;</span>
+<span class="nc" id="L57">                break;</span>
+            default:
+<span class="nc" id="L59">                nombre = &quot;&quot; + numero;</span>
+                break;
+
+        }
+<span class="nc" id="L63">        return nombre + &quot; de &quot; + palo;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

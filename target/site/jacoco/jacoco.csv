@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+sieteymedia,com.ieselcalamot.juegos,SieteYMedia,199,0,18,0,39,0,14,0,5,0
+sieteymedia,com.ieselcalamot.baraja_espanyola,BarajaEspanyola,190,0,22,0,30,0,15,0,4,0
+sieteymedia,com.ieselcalamot.baraja_espanyola,Carta,100,0,13,0,31,0,14,0,6,0
+sieteymedia,com.ieselcalamot.JuegosCartas,JuegosCartasApp,57,0,6,0,18,0,5,0,1,0
