@@ -45,7 +45,7 @@ public class SieteYMedia {
             puntosBanca += getPuntosCarta(cartaExtraida);
             System.out.println("Ha salido el " + cartaExtraida.getNombre());
             System.out.println("La banca tiene " + puntosBanca + " puntos.");
-        } while (puntosBanca < 7.5f && puntosBanca < puntosJugador);
+        } while (puntosBanca < 7.5f && puntosBanca <= puntosJugador);
     }
 
     public void jugar() throws IOException {
@@ -55,7 +55,7 @@ public class SieteYMedia {
         System.out.println("Juega el jugador");
         juegaJugador();
         System.out.println("-----------------------------------");
-        if (puntosJugador <= 7.5f) {
+        if (puntosJugador < 7.5f) {
             System.out.println("Juega la banca");
             juegaBanca();
         }
